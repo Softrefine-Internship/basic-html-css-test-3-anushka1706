@@ -181,7 +181,7 @@ button:hover {
 }
 .inner-circle {
   height: 4rem;
-  background-color: #b8babb;
+  background-color: #a8a9a9;
   aspect-ratio: 1/1;
   border-radius: 50%;
   align-self: center;
@@ -197,7 +197,7 @@ button:hover {
   position: absolute;
   justify-content: center;
   align-items: center;
-  background-color:  #7d8686;;
+  background-color:  #8b9292;
 }
 .inner-circle span {
   position: absolute;
