@@ -155,7 +155,7 @@ button:hover {
   position: relative;
 }
 .user-profile-progress {
-  background-color: #afaeae5e;
+  background-color: #9f9d9d76;
   display: flex;
   height: 9.5rem;
   justify-content: center;
@@ -172,27 +172,32 @@ button:hover {
   /* padding: 1px; */
   align-self: center;
   border-radius: 50%;
+  position: relative;
+  z-index: 1;
   height: 6rem;
   width: 6rem;
   background-color: #59737c;
-  background: conic-gradient(from 90deg, #fca424 0% 75%, #94a2a8 75% 100%);
+  background: conic-gradient(from 90deg, #fca624 0% 75%, #94a2a8 75% 100%);
 }
 .inner-circle {
   height: 4rem;
-  background-color: #859399;
+  background-color: #b8babb;
   aspect-ratio: 1/1;
   border-radius: 50%;
   align-self: center;
   position: relative;
+  z-index: 3;
 }
 .middle-circle {
   height: 5.2rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
+  z-index: 2;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  background-color: #59737c;
+  background-color:  #7d8686;;
 }
 .inner-circle span {
   position: absolute;
@@ -264,10 +269,11 @@ button:hover {
 }
 .nav-a:link,
 .nav-a:visited {
-  color: #cdcdcd;
+  color: #c2c2c2;
   text-decoration: none;
   align-self: center;
   transition: color 0.4s;
+  font-weight: normal;
 }
 .nav-links li:hover,
 .nav-a:hover {
@@ -453,7 +459,7 @@ button:hover {
   gap: 3rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: #c0c0c0;
+  color: #a7a6a6;
   box-shadow: 0 0 10px rgba(199, 197, 197, 0.253);
 }
 .total {
