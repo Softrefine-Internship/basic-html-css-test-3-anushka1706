@@ -17,6 +17,9 @@ body {
   font-family: "Poppins";
   max-height: 800px;
 }
+main {
+  max-width: 100vw;
+}
 /* GENERAL */
 a:hover,
 a:active,
@@ -51,9 +54,10 @@ button:hover {
 }
 .header {
   background-image: linear-gradient(to bottom, #0e445795, #0e445795),
-    url("./img/header.jpg");
-  background-position: 0px;
-  height: 17rem;
+    url("img/header.jpg");
+  background-position: top 33% center;
+  background-repeat: no-repeat;
+  height: 20rem;
 }
 .logo {
   display: flex;
@@ -62,7 +66,7 @@ button:hover {
 }
 .logo-name {
   color: rgb(224, 221, 221);
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .logo-icon {
@@ -84,33 +88,36 @@ button:hover {
   border-radius: 3px;
 }
 .need-help {
-  background-color: #376778;
-  color: #94bccb;
+  background-color: #518392;
+  color: rgb(224, 223, 223);
   border: none;
   font-size: 1rem;
   border-radius: 3px;
   text-transform: uppercase;
+  transition: background-color 0.4s;
   padding: 9px;
 }
 .need-help:hover {
   background-color: #185369;
 }
 .notification {
-  font-size: 2.5rem;
-  color: #5d8a9b;
+  font-size: 2rem;
+  color: #97b3bb;
   position: relative;
+  transition: color 0.4s;
 }
 .notification:hover {
-  color: #265767;
+  color: #f4f9fa;
 }
 .notification::after {
   content: "";
   position: absolute;
+  border: 1px solid white;
   top: 15%;
   right: 15%;
-  height: 6px;
-  width: 6px;
-  background-color: #f5bd69;
+  height: 4px;
+  width: 4px;
+  background-color: #ffa429;
   border-radius: 50%;
 }
 .user-info {
@@ -119,8 +126,8 @@ button:hover {
   justify-content: start;
 }
 .user-img-main {
-  height: 13.5rem;
-  width: 19rem;
+  width: 17.5rem;
+  height: 17.5rem;
   border-radius: 3px;
   position: absolute;
   left: 0;
@@ -132,25 +139,25 @@ button:hover {
 }
 .info-p {
   color: rgba(255, 255, 255, 0.473);
-  line-height: 1.7;
+  line-height: 2;
   font-size: 9px;
 }
 .info-p span {
-  color: rgb(226, 225, 225);
+  color: rgb(222, 220, 220);
   font-size: 9px;
 }
 .user-details {
-  margin-left: 21rem;
-  line-height: 2;
+  margin-left: 20rem;
+  line-height: 1.8;
 }
 .top-info {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   position: relative;
 }
 .user-profile-progress {
-  background-color: #97b6c27a;
+  background-color: #afaeae5e;
   display: flex;
-  height: 9rem;
+  height: 9.5rem;
   justify-content: center;
   width: 26rem;
   padding: 1rem;
@@ -161,38 +168,38 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px;
+  justify-content: center;
+  /* padding: 1px; */
   align-self: center;
   border-radius: 50%;
   height: 6rem;
   width: 6rem;
-  /* aspect-ratio: 1/1; */
   background-color: #59737c;
-  background: conic-gradient(from 90deg, #fca424 0% 75%, #59737c 75% 100%);
+  background: conic-gradient(from 90deg, #fca424 0% 75%, #94a2a8 75% 100%);
 }
 .inner-circle {
-  height: 3.5rem;
-  background-color: #849399;
+  height: 4rem;
+  background-color: #859399;
   aspect-ratio: 1/1;
   border-radius: 50%;
   align-self: center;
   position: relative;
 }
 .middle-circle {
-  height: 6rem;
+  height: 5.2rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #878e90;
+  background-color: #59737c;
 }
 .inner-circle span {
   position: absolute;
-  color: white;
-  font-size: 1.3rem;
+  color: #eff0f1;
+  font-size: 1.1rem;
   font-weight: 500;
-  top: -5%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -200,19 +207,20 @@ button:hover {
   align-self: center;
 }
 .progress-heading {
-  color: white;
+  color: #eff1f2;
   font-size: 1.3rem;
 }
 .progress-p {
-  color: rgba(255, 255, 255, 0.548);
+  color: #b9c2c4;
   margin-bottom: 1rem;
 }
 .complete-progress {
-  background-color: #f9ae3e;
+  background-color: #ffa429;
   border-radius: 2px;
   border: none;
   width: 9.5rem;
   font-size: 1rem;
+  transition: background-color 0.4s;
   color: rgb(230, 228, 228);
   padding: 6px;
   text-transform: uppercase;
@@ -220,7 +228,7 @@ button:hover {
 .complete-progress:hover {
   background-color: #f1ba67;
 }
-.setting {
+.camera {
   position: absolute;
   right: 0;
   top: 83.5%;
@@ -229,19 +237,18 @@ button:hover {
   padding: 1px;
   width: 2rem;
   margin-right: 0;
-  background-color: #cfeefb1f;
-}
-.setting-icon {
+  background-color: #777c7b4a;
   font-size: 1.4rem;
-  color: #749ba8;
+  color: #969d9a;
 }
-.setting:hover {
-  background-color: #105f811f;
+.camera:hover {
+  background-color: #bebfbf49;
+  color: black;
 }
 .nav {
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 6em;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #c7c3c39f;
@@ -252,7 +259,7 @@ button:hover {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  gap: 9rem;
+  gap: 4rem;
   margin-left: 2rem;
 }
 .nav-a:link,
@@ -260,9 +267,18 @@ button:hover {
   color: #cdcdcd;
   text-decoration: none;
   align-self: center;
+  transition: color 0.4s;
 }
+.nav-links li:hover,
 .nav-a:hover {
+  cursor: pointer;
+}
+.nav-links li:hover .nav-a:not(.active-a) {
   color: #1a1a1a;
+  font-weight: 500;
+}
+.nav-links li:hover {
+  border-bottom: 2px solid #feb64a;
 }
 .active-li {
   border-bottom: 2px solid #fca424;
@@ -277,16 +293,21 @@ button:hover {
 }
 .nav-a.active-a {
   color: #1a1a1a;
-  font-weight: 600;
+  font-weight: 500;
 }
 .nav-links li {
-  height: 4rem;
   display: flex;
-  align-items: center;
+  height: 6rem;
+  justify-content: center;
+  width: 14rem;
+}
+.nav-a {
+  color: #1a1a1a;
 }
 .claim-btn {
   background-color: #0dd39d;
   color: white;
+  transition: background-color 0.4s;
   text-transform: uppercase;
   border: none;
   display: flex;
@@ -302,49 +323,65 @@ button:hover {
 .claim-btn:hover {
   background-color: #39eebe;
 }
+.sidebar-wrap {
+  height: 49.5rem;
+  border-right: 1px solid #e8e3e39f;
+}
 .sidebar {
   box-sizing: border-box;
-  padding-right: 1.2rem;
-  border-right: 1px solid #e8e3e39f;
+  padding-right: 8px;
+  height: 46rem;
+  overflow-y: scroll;
   margin-top: 0;
   margin-left: 4rem;
+}
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 2px;
 }
 .family-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #e8e3e39f;
-  padding-bottom: 5px;
-  margin-top: 3rem;
+  padding-bottom: 6px;
+  margin-top: 5.5rem;
 }
 .about-family p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: #151515;
   font-weight: 600;
 }
 .dots {
   display: inline-block;
-  height: 4px;
-  width: 4px;
-  background-color: #a2a3a3;
+  height: 3.5px;
+  width: 3.5px;
+  background-color: #b2b3b3;
   border-radius: 50%;
 }
 .members {
   padding-top: 7px;
 }
 .members p {
-  color: #c8c6c6;
+  color: #979797;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 400;
   padding-bottom: 7px;
   padding-top: 7px;
 }
 .family-img {
   border-radius: 50%;
-  width: 3.7rem;
+  width: 4rem;
+  aspect-ratio: 1/1;
   margin-right: 1rem;
-  height: 3.3rem;
   object-fit: cover;
   border: none;
 }
@@ -362,7 +399,7 @@ button:hover {
   font-size: 1.3rem;
   margin-top: 1rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #151515;
   padding-bottom: 5px;
 }
 .about-me-info-p {
@@ -395,62 +432,66 @@ button:hover {
 .claims-activities {
   grid-column: 2/3;
   margin-top: 1rem;
-  margin-left: 1rem;
+  column-gap: 2rem;
+  margin-left: 0;
 }
 .summary {
   display: flex;
   justify-content: space-between;
   grid-column: 1/4;
-  margin-left: 0;
+  margin-left: 2rem;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 .new-claims,
 .new-members,
 .total-claims {
   display: flex;
   width: 38rem;
-  /* padding: 1rem; */
+  padding: 1.2rem;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: #c6c6c6;
+  color: #c0c0c0;
   box-shadow: 0 0 10px rgba(199, 197, 197, 0.253);
 }
 .total {
-  font-size: 5rem;
+  font-size: 4rem;
   align-self: center;
   color: #1a1a1a;
   padding: 0 2rem;
   border-right: 1px solid #d4d9db45;
 }
 .summary-p {
-  font-weight: 600;
+  font-weight: 400;
 }
 .more-members span {
   font-size: 8px;
 }
 .overlay {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
   background-color: #44eabdb7;
   position: absolute;
   right: 0;
   margin-left: -10px;
-  top: 28.5%;
+  top: 30%;
   text-align: center;
 }
 .overlay-parent {
   display: flex;
+  align-items: center;
   position: relative;
-  /* width: 2.3rem;
-  height: 2.3rem; */
 }
 .overlay-parent .summary-img {
   border: none;
+  height: 2.3rem;
+  width: 2.3rem;
 }
 .overlay span {
-  font-size: 9px;
+  font-size: 7px;
   color: white;
 }
 .summary-imgs {
@@ -459,24 +500,37 @@ button:hover {
 }
 .pending-users {
   height: 11rem;
-  width: 20rem;
-  padding: 1rem;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
   object-fit: cover;
   padding-right: 0;
-  border-radius: 1.3rem;
 }
 .pending {
   display: flex;
   gap: 5px;
+  padding-left: 1rem;
   box-shadow: 0 0 40px rgba(214, 212, 212, 0.265);
 }
 .pending-claims {
-  margin-left: 0;
+  margin-left: 1rem;
   margin-top: 1rem;
   display: flex;
+  height: 29rem;
   gap: 1.2rem;
+  width: 97%;
+  overflow-y: scroll;
   grid-column: 1/3;
   flex-direction: column;
+}
+.pending-claims::-webkit-scrollbar {
+  width: 3px;
+}
+.pending-claims::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+.pending-claims::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 2px;
 }
 .pending-name {
   margin-bottom: 1rem;
@@ -500,21 +554,23 @@ button:hover {
 .filed,
 .location {
   font-size: 1.5rem;
-  color: #cdcdcd;
+  color: #d8d8d8;
 }
 .pending-user-li p {
-  color: #7e7d7d;
+  color: #676767;
   font-weight: 500;
 }
 .pending-user-li p span {
-  color: #cdcdcd;
+  color: #acacac;
 }
 .pending-pay-btn {
   padding: 8px;
-  background-color: #fca424;
+  transition: background-color 0.4s;
+  background-color: #ffa429;
   color: rgb(230, 229, 229);
   text-transform: uppercase;
   align-self: end;
+  border-radius: 3px;
   border: none;
   display: flex;
   align-items: center;
@@ -527,13 +583,14 @@ button:hover {
   margin-right: 1rem;
 }
 .pending-pay-btn:hover {
-  background-color: #feb64a;
+  background-color: #f8b95a;
 }
 .activity {
   box-shadow: 0 0 20px rgba(215, 213, 213, 0.362);
   padding: 1.5rem;
   margin-top: 1rem;
   margin-left: 0;
+  width: 38rem;
 }
 .activity h4 {
   font-size: 1.5rem;
@@ -544,43 +601,65 @@ button:hover {
   border-bottom: 1px solid #cdcdcd55;
 }
 .activity-update {
+  height: 23rem;
   padding-top: 2rem;
-  height: 31rem;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+.activity-update::-webkit-scrollbar {
+  width: 3px;
+}
+.activity-update::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+.activity-update::-webkit-scrollbar-thumb {
+  background: #feb64a;
+  border-radius: 2px;
+}
 .activity-li {
   display: flex;
-  gap: 1.2rem;
-  width: 25rem;
+  position: relative;
+  gap: 2rem;
+  width: 26rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   line-height: 1.7;
 }
 .activity-name {
   text-transform: capitalize;
-  font-weight: 600;
-  color: #606060;
+  font-weight: 500;
+  color: #1d1d1d;
   font-size: 1.4rem;
 }
 .activity-details {
-  color: #9b9a9a;
-  font-size: 1.1rem;
+  color: #838383;
 }
 .activity-time {
-  color: #cdcdcd;
+  color: #b7b6b6;
 }
 .li-dot {
-  height: 8px;
+  height: 7px;
   width: 8px;
+  margin-left: 1rem;
   margin-top: 5px;
   border-radius: 50%;
 }
+.dot-line {
+  height: 8rem;
+  left: 4.7%;
+  border: 1px solid rgba(235, 236, 235, 0.41);
+  top: 17%;
+  position: absolute;
+}
 .dot-green {
+  box-shadow: 0px 0px 0px 3px #b6f3cc6e;
   background-color: #0dd39d;
 }
 .dot-yellow {
+  box-shadow: 0px 0px 0px 3px #f1cf9d43;
   background-color: #fca424;
 }
 .dot-blue {
+  box-shadow: 0px 0px 0px 3px rgba(179, 179, 255, 0.388);
   background-color: blue;
 }

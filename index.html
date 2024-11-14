@@ -68,89 +68,93 @@
             </div>
           </div>
         </div>
-        <button class="setting">
-          <ion-icon class="setting-icon" name="settings-outline"></ion-icon>
+        <button class="camera">
+          <ion-icon class="camera-icon" name="camera-outline"></ion-icon>
         </button>
       </div>
     </header>
-    <main class="grid grid-col-2 bottom-margin">
-      <div class="sidebar">
-        <div class="about-family">
-          <div class="family-heading">
-            <p>About my family</p>
-            <div class="dot">
-              <div class="dots"></div>
-              <div class="dots"></div>
-              <div class="dots"></div>
+    <main class="grid grid-col-2">
+      <div class="sidebar-wrap">
+        <div class="sidebar">
+          <div class="about-family">
+            <div class="family-heading">
+              <p>About my family</p>
+              <div class="dot">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+              </div>
+            </div>
+            <div class="members">
+              <p class="member-name">covered person</p>
+              <img
+                class="family-img"
+                src="./img/member-1.jpg"
+                alt="family-member"
+              />
+              <img
+                class="family-img"
+                src="./img/member-2.jpg"
+                alt="family-member"
+              />
+              <p class="member-name">Beneficiary persons</p>
+              <img
+                src="./img/member-5.jpg"
+                class="family-img"
+                alt="family-member"
+              /><img
+                src="./img/member-9.jpg"
+                alt="family-member"
+                class="family-img"
+              /><img
+                class="family-img"
+                src="./img/member-3.jpg"
+                alt="family-member"
+              />
+              <p class="member-name">emergency persons</p>
+              <img
+                class="family-img"
+                src="./img/member-4.jpg"
+                alt="family-member"
+              /><img
+                class="family-img"
+                src="./img/member-6.jpg"
+                alt="family-member"
+              /><img
+                class="family-img"
+                src="./img/member-7.jpg"
+                alt="family-member"
+              /><img
+                class="family-img"
+                src="./img/member-8.jpg"
+                alt="family-member"
+              />
             </div>
           </div>
-          <div class="members">
-            <p class="member-name">covered person</p>
-            <img
-              class="family-img"
-              src="./img/member-1.jpg"
-              alt="family-member"
-            />
-            <img
-              class="family-img"
-              src="./img/member-2.jpg"
-              alt="family-member"
-            />
-            <p class="member-name">Beneficiary persons</p>
-            <img
-              src="./img/member-5.jpg"
-              class="family-img"
-              alt="family-member"
-            /><img
-              src="./img/member-9.jpg"
-              alt="family-member"
-              class="family-img"
-            /><img
-              class="family-img"
-              src="./img/member-3.jpg"
-              alt="family-member"
-            />
-            <p class="member-name">emergency persons</p>
-            <img
-              class="family-img"
-              src="./img/member-4.jpg"
-              alt="family-member"
-            /><img
-              class="family-img"
-              src="./img/member-6.jpg"
-              alt="family-member"
-            /><img
-              class="family-img"
-              src="./img/member-7.jpg"
-              alt="family-member"
-            /><img
-              class="family-img"
-              src="./img/member-8.jpg"
-              alt="family-member"
-            />
-          </div>
-        </div>
-        <div class="about-me">
-          <div class="about-me-heading">
-            <p class="about-me-p">About me</p>
-            <div class="dot">
-              <div class="dots"></div>
-              <div class="dots"></div>
-              <div class="dots"></div>
+          <div class="about-me">
+            <div class="about-me-heading">
+              <p class="about-me-p">About me</p>
+              <div class="dot">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+              </div>
             </div>
-          </div>
-          <div class="about-me-info">
-            <p class="about-me-info-p">Email<span>emily@gmail.com</span></p>
-            <p class="about-me-info-p">Phone<span>+91876544322</span></p>
-            <p class="about-me-info-p">
-              Address<span>PO box 2103 Lindon NJ (USA) </span>
-            </p>
-            <p class="about-me-info-p">Plan <span>$300</span></p>
-            <p class="about-me-info-p">Joined <span>Mon 22nd Feb 2019</span></p>
+            <div class="about-me-info">
+              <p class="about-me-info-p">Email<span>emily@gmail.com</span></p>
+              <p class="about-me-info-p">Phone<span>+91876544322</span></p>
+              <p class="about-me-info-p">
+                Address<span>PO box 2103 Lindon NJ (USA) </span>
+              </p>
+              <p class="about-me-info-p">Plan <span>$300</span></p>
+              <p class="about-me-info-p">
+                Joined <span>Mon 22nd Feb 2019</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="main-content">
+      <div class="dashboard-content">
         <div class="nav">
           <ul class="nav-links">
             <li class="active-li">
@@ -261,8 +265,8 @@
               </div>
             </div>
           </div>
-          <div class="pending-claims all-margins">
-            <article class="pending">
+          <section class="pending-claims all-margins">
+            <div class="pending">
               <img class="pending-users" src="./img/pending-.jpg" alt="" />
               <div class="pending-details">
                 <p class="pending-name">amelia kimani</p>
@@ -287,8 +291,8 @@
               <button class="pending-pay-btn">
                 <ion-icon class="claim-icon" name="cash-outline"></ion-icon>Pay
               </button>
-            </article>
-            <article class="pending">
+            </div>
+            <div class="pending">
               <img class="pending-users" src="./img/pendig-2.jpg" alt="" />
               <div class="pending-details">
                 <p class="pending-name">genevieve juma</p>
@@ -313,8 +317,8 @@
               <button class="pending-pay-btn">
                 <ion-icon class="claim-icon" name="cash-outline"></ion-icon>Pay
               </button>
-            </article>
-            <article class="pending">
+            </div>
+            <div class="pending">
               <img class="pending-users" src="./img/pending-3.jpg" alt="" />
               <div class="pending-details">
                 <p class="pending-name">theodore wachira</p>
@@ -339,13 +343,14 @@
               <button class="pending-pay-btn">
                 <ion-icon class="claim-icon" name="cash-outline"></ion-icon>Pay
               </button>
-            </article>
-          </div>
+            </div>
+          </section>
           <aside class="activity all-margins">
             <h4>activity</h4>
             <ul class="activity-update">
               <li class="activity-li">
                 <div class="li-dot dot-green"></div>
+                <hr class="dot-line" />
                 <div class="activity-info">
                   <p class="activity-name">claimed $2000</p>
                   <p class="activity-details">
@@ -356,6 +361,7 @@
               </li>
               <li class="activity-li">
                 <div class="li-dot dot-yellow"></div>
+                <hr class="dot-line" />
                 <div class="activity-info">
                   <p class="activity-name">102 new members</p>
                   <p class="activity-details">
@@ -366,6 +372,7 @@
               </li>
               <li class="activity-li">
                 <div class="li-dot dot-blue"></div>
+                <hr class="dot-line" />
                 <div class="activity-info">
                   <p class="activity-name">3 claims are waiting</p>
                   <p class="activity-details">
@@ -376,6 +383,7 @@
               </li>
               <li class="activity-li">
                 <div class="li-dot dot-green"></div>
+                <hr class="dot-line" />
                 <div class="activity-info">
                   <p class="activity-name">102 new members</p>
                   <p class="activity-details">
@@ -386,10 +394,54 @@
               </li>
               <li class="activity-li">
                 <div class="li-dot dot-yellow"></div>
+                <hr class="dot-line" />
                 <div class="activity-info">
                   <p class="activity-name">claimed $2000</p>
                   <p class="activity-details">
                     23 members are got claimed in washington DC
+                  </p>
+                  <span class="activity-time">5:40pm</span>
+                </div>
+              </li>
+              <li class="activity-li">
+                <div class="li-dot dot-blue"></div>
+                <hr class="dot-line" />
+                <div class="activity-info">
+                  <p class="activity-name">3 claims are waiting</p>
+                  <p class="activity-details">
+                    Please contribute them,they are waiting for your help
+                  </p>
+                  <span class="activity-time">5:40pm</span>
+                </div>
+              </li>
+              <li class="activity-li">
+                <div class="li-dot dot-yellow"></div>
+                <hr class="dot-line" />
+                <div class="activity-info">
+                  <p class="activity-name">102 new members</p>
+                  <p class="activity-details">
+                    We have 102 registrations check out their profiles
+                  </p>
+                  <span class="activity-time">5:40pm</span>
+                </div>
+              </li>
+              <li class="activity-li">
+                <div class="li-dot dot-green"></div>
+                <hr class="dot-line" />
+                <div class="activity-info">
+                  <p class="activity-name">claimed $2000</p>
+                  <p class="activity-details">
+                    23 members are got claimed in washington DC
+                  </p>
+                  <span class="activity-time">5:40pm</span>
+                </div>
+              </li>
+              <li class="activity-li">
+                <div class="li-dot dot-blue"></div>
+                <div class="activity-info">
+                  <p class="activity-name">3 claims are waiting</p>
+                  <p class="activity-details">
+                    Please contribute them,they are waiting for your help
                   </p>
                   <span class="activity-time">5:40pm</span>
                 </div>
