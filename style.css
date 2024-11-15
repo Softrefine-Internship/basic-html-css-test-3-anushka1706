@@ -57,7 +57,7 @@ button:hover {
     url("img/header.jpg");
   background-position: top 33% center;
   background-repeat: no-repeat;
-  height: 20rem;
+  height: 21rem;
 }
 .logo {
   display: flex;
@@ -140,11 +140,11 @@ button:hover {
 .info-p {
   color: rgba(255, 255, 255, 0.473);
   line-height: 2;
-  font-size: 9px;
+  font-size: 1rem;
 }
 .info-p span {
   color: rgb(222, 220, 220);
-  font-size: 9px;
+  font-size: 1rem;
 }
 .user-details {
   margin-left: 20rem;
@@ -157,7 +157,7 @@ button:hover {
 .user-profile-progress {
   background-color: #9f9d9d76;
   display: flex;
-  height: 9.5rem;
+  height: 11rem;
   justify-content: center;
   width: 26rem;
   padding: 1rem;
@@ -197,7 +197,7 @@ button:hover {
   position: absolute;
   justify-content: center;
   align-items: center;
-  background-color:  #8b9292;
+  background-color: #8b9292;
 }
 .inner-circle span {
   position: absolute;
@@ -236,18 +236,21 @@ button:hover {
 .camera {
   position: absolute;
   right: 0;
-  top: 83.5%;
-  height: 1.5rem;
+  top: 87%;
+  height: 2rem;
+  aspect-ratio: 1/1;
   border: none;
   padding: 1px;
-  width: 2rem;
   margin-right: 0;
-  background-color: #777c7b4a;
+  background-color: #8e8d8d76;
   font-size: 1.4rem;
-  color: #969d9a;
+  color: #adafae;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .camera:hover {
-  background-color: #bebfbf49;
+  background-color: #e8ebeb49;
   color: black;
 }
 .nav {
@@ -264,7 +267,6 @@ button:hover {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
   margin-left: 2rem;
 }
 .nav-a:link,
@@ -330,15 +332,17 @@ button:hover {
   background-color: #39eebe;
 }
 .sidebar-wrap {
-  height: 49.5rem;
+  height: 48.5rem;
+  padding-top: 3px;
   border-right: 1px solid #e8e3e39f;
 }
 .sidebar {
   box-sizing: border-box;
   padding-right: 8px;
-  height: 46rem;
-  overflow-y: scroll;
+  height: 40.5rem;
   margin-top: 0;
+  overflow-y: scroll;
+  margin-top: 5rem;
   margin-left: 4rem;
 }
 .sidebar::-webkit-scrollbar {
@@ -357,7 +361,6 @@ button:hover {
   align-items: center;
   border-bottom: 1px solid #e8e3e39f;
   padding-bottom: 6px;
-  margin-top: 5.5rem;
 }
 .about-family p {
   font-size: 1.4rem;
@@ -481,7 +484,7 @@ button:hover {
   border-radius: 50%;
   background-color: #44eabdb7;
   position: absolute;
-  right: 0;
+  right: -5%;
   margin-left: -10px;
   top: 30%;
   text-align: center;
@@ -493,8 +496,8 @@ button:hover {
 }
 .overlay-parent .summary-img {
   border: none;
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 2.2rem;
+  width: 2.2rem;
 }
 .overlay span {
   font-size: 7px;
@@ -514,7 +517,7 @@ button:hover {
 .pending {
   display: flex;
   gap: 5px;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   box-shadow: 0 0 40px rgba(214, 212, 212, 0.265);
 }
 .pending-claims {
